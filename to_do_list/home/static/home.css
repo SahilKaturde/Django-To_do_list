@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100vh;
+    background: #CAD5C5;
+}
+
+:root {
+    --cream: #F6E5DA;
+    --sage-green: #D1E0D1;
+    --warm-beige: #E3C2B5;
+    --off-white: #FFF7F3;
+    --dusty-green: #A9BFA7;
+    --peachy-nude: #F4D7C5;
+    --soft-mocha: #D6C7BE;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 3vh; */
+    /* margin-bottom: 3vh; */
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    font-family: 'Just Another Hand', cursive;
+}
+
+main{
+    width: 50%;
+    height: 102vh;
+    background-color: #FFFFFF;
+    border-radius: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.one{
+    height: 25vh;
+    width: 90%;
+    background-color: #F1ECE6;
+    border-radius: 2vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.two{
+    height: 65vh;
+    width: 90%;
+    background-color: var(--off-white);
+    border-radius: 2vh;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0vh;
+    top: 25vh;
+    background-color: #FFFFFF;
+    height: 50vh;
+    width: 11.5vh;
+    border-radius: 1vh;
+    padding: 0; /* Remove padding */
+}
+
+.sidebar ul {
+    height: 100%; /* Make ul take full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+.sidebar li {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 9vh;
+    height: 9vh;
+    background-color: #CAD5C5;
+}
+
+#menu-box-1{
+    background-color: #F1ECE6;
+}
+
+#menu-box-2{
+    background-color: #DAC8BE;
+}
+
+#menu-box-3{
+    background-color: var(--peachy-nude);
+    
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    border-radius: 2px;
+}
+
+.name-div-1{
+    
+    width: 60%;
+    height: 20vh;
+    margin: 2vh;
+    background-color: #D1E0D1;
+    
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-div-2{
+    background-color: #DAC8BE;
+    width: 40%;
+    height: 20vh;
+    border-radius: inherit;
+}
+
+#text-hand{
+    font-family: 'Just Another Hand', cursive;
+    margin: 2vh;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.two {
+    column-width: 30vh; /* Adjust column size */
+    column-gap: 15px; /* Spacing between columns */
+    /* overflow: hidden; */
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
+}
+
+.repeating-box {
+    display: inline-block;
+    font-size: small;
+    width: 100%; 
+   
+    margin: 20px;
+    height: auto; 
+    break-inside: avoid; 
+    border-radius: inherit;
+}
+
+.two::-webkit-scrollbar{
+    width: 2vh;
+}
+
+.red{
+    font-size: 4vh;
+    cursor: pointer;
+    margin: 3vh;
+    padding: 1vh;
+    background-color:#50C878;
+    border: none;
+    border-radius: 2vh;
+}
+
+
+.green{
+    font-size: 4vh;
+    cursor: pointer;
+    /* margin: 3vh; */
+    padding: 1vh;
+    background-color:#4A5D23;
+    border: none;
+    border-radius: 2vh;
+}
+
+
+
+@media (max-width:600px) {
+    main{
+        width: 80%;
+    }
+
+    .sidebar{
+        width: 6vh;
+    }
+}
+
+
